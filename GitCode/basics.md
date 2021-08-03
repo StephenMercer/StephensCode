@@ -47,7 +47,6 @@ git commit -m "Your informative message here"
 
 ```shell
 git push
-
 ```
 
 ## Pulling Changes From  Repository
