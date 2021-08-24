@@ -1,74 +1,44 @@
 #  Reassigning Data Types / Lecture 9 Code
 ### JS
 ```javascript
-// PRIMITIVE TYPES
+let val;
 
-// String
-const name = 'John Doe';
+// Number to string
+val = String(555);
+val = String(4+4);
+// Bool to string
+val = String(true);
+// Date to string
+val = String(new Date());
+// Array to string
+val = String([1,2,3,4]);
 
-console.log(typeof name)
-// Number
-const age = 45;
+// toString()
+val = (5).toString();
+val = (true).toString();
 
-console.log(typeof age)
-// Boolean
-const hasKids = true;
+// String to number
+val = Number('5');
+val = Number(true);
+val = Number(false);
+val = Number(null);
+val = Number('hello');
+val = Number([1,2,3]);
 
-console.log(typeof hasKids)
-// Null, will show as object but this is error
-const car = null;
+val = parseInt('100.30');
+val = parseFloat('100.30');
 
-console.log(typeof car)
-// Undefined
-let test;
+// Output
+// console.log(val);
+// console.log(typeof val);
+// //console.log(val.length);
+// console.log(val.toFixed(2));
 
-console.log(typeof test)
-// Symbols
-const sym = Symbol();
+const val1 = String(5);
+const val2 = 6;
+const sum = Number(val1 + val2);
 
-console.log(sym)
-
-// REFERENCE TYPES - Objects
-
-// Array
-const hobbies =(['movies', 'music', 'football'])
-
-console.log(typeof hobbies);
-// Object Literal
-const address = {
-  number: 18,
-  street: 'Twickenham Cl',
-  Suburb: 'Normanhurst',
-  City: 'Sydney',
-  State: 'NSW',
-}
-
-console.log(typeof address)
-
-console.table(address)
-// Date
-const today = new Date()
-
-console.log(today)
-
-console.log(typeof today)
-// Function
-console.log(typeof Date)
-```
-### HTML
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JavaScript Sandbox: Section 2</title>
-</head>
-<body>
-  <h1>JavaScript Sandbox: Section 2</h1>
-<script src = "app.js"></script>
-</body>
-</html>
+console.log(sum);
+console.log(typeof sum);
 ```
 
