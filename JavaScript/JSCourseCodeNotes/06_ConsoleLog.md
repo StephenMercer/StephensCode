@@ -1,5 +1,5 @@
 # Console Log / Lecture 6 Code
-### JS
+### JS APP.JS
 ```javascript
 // Log to Console
 console.log('Hello World');
