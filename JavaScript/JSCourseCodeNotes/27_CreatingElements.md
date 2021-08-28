@@ -30,9 +30,23 @@ li.appendChild(link);
 
 // Append li as child to ul
 document.querySelector('ul.collection').appendChild(li);
-
-
 console.log(li);
+
+
+/*
+// Insert Before
+   // Get Parent
+  const Celsius = document.getElementById('celsius')
+  if(Celsius.children.length === 0) {
+  // Create Div
+  const h1 = document.createElement('h1')
+  // Add id
+  h1.setAttribute('id','selectMe')
+  // Add Text
+  h1.appendChild(document.createTextNode(`${parseFloat(click.Celsius).toFixed(2)}°C`))
+  // Insert Element
+  Celsius.insertBefore(h1, null)
+*/
 ```
 ### HTML
 ```html
