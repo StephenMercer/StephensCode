@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Inline & Block Styling</title>
+   <style>
+      *{
+         box-sizing: border-box;
+      }
+      li {
+         display: inline;
+      }
+      li a {
+         padding-right: 20px;
+      }
+      img {
+         /* Cannot do margin auto on an inline element needs to be block */
+         margin: auto;
+         display: block;
+      }
+
+      .box {
+         /* Cannot use inline property on width */
+         width: 33%;
+         display: inline-block;
+         background: #f4f4f4;
+         padding: 20px;
+         margin-bottom: 15px;
+      }
+   </style>
+</head>
+<body>
+   <ul>
+      <li><a href="#">Technology</a></li>
+      <li><a href="#">Business</a></li>
+      <li><a href="#">Fashion</a></li>
+   </ul>
+
+   <br><br>
+
+   <img src="./img/leaf.png" alt="My image">
+
+   <br><br>
+
+   <div class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, vero repellat inventore veritatis neque eius eveniet velit harum totam sit, eaque minus alias quibusdam quam molestias ratione at officia adipisci?</p>
+   </div>
+   <div class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, vero repellat inventore veritatis neque eius eveniet velit harum totam sit, eaque minus alias quibusdam quam molestias ratione at officia adipisci?</p>
+   </div>
+   <div class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, vero repellat inventore veritatis neque eius eveniet velit harum totam sit, eaque minus alias quibusdam quam molestias ratione at officia adipisci?</p>
+   </div>
+</body>
+</html>
