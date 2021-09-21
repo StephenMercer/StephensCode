@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/menu.css">
+   <title>Hamburger Menu Overlay</title>
+</head>
+<body>
+   <div class="menu-wrap">
+      <input type="checkbox" class="toggler">
+      <div class="hamburger">
+         <div></div>
+      </div>
+      <div class="menu">
+         <div>
+            <div>
+               <ul>
+                  <li><a href="#showcase">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#contact">Contact</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <header id="showcase">
+      <div class="container showcase-container">
+         <h1>Welcome</h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eos dolorem culpa, quibusdam voluptatibus eligendi est quidem provident aliquid. Expedita delectus impedit incidunt voluptatem dicta reiciendis alias repellat exercitationem cum?</p>
+         <a href="#about" class="btn">Read More</a>
+      </div>
+   </header>
+
+   <section id="about">
+      <div class="container about-container">
+         <h1>About Us</h1>
+         <div class="wrapper">
+            <div class="profile">
+               <img class="profileImages" src="./img/m-brauer-dC27YfDSAfc-unsplash.jpg" alt="">
+               <div class="innerWrapper">
+                  <h3>Micheal Brauer | CEO</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ad voluptatem exercitationem, a corrupti mollitia. <br><br>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ducimus iure, id veniam neque libero sunt ipsum dicta voluptates quisquam, maxime ullam quam vero provident aut dignissimos, consequuntur in nisi iusto natus. Facere earum ducimus, sunt molestiae sapiente illum reprehenderit.</p>
+               </div>
+            </div>
+            <div class="profile">
+               <img class="profileImages" src="./img/linkedin-sales-solutions-QgYvORVDdd8-unsplash.jpg" alt="">
+               <div class="innerWrapper">
+                  <h3>Janet Louise | CFO</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ad voluptatem exercitationem, a corrupti mollitia. <br><br>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid expedita deleniti nostrum quod molestias reprehenderit et! Velit distinctio corporis minima exercitationem inventore natus dolor consectetur, asperiores sed ipsa assumenda ipsum impedit facilis, aut, magnam provident fuga deserunt nobis in id.</p>
+               </div>
+            </div>
+            <div class="profile">
+               <img class="profileImages" src="./img/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="">
+               <div class="innerWrapper">
+                  <h3>James Burham | COO</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ad voluptatem exercitationem, a corrupti mollitia. <br> <br>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati in excepturi ipsum laudantium ratione praesentium quam unde non aliquam itaque minima sunt, beatae cupiditate voluptatem quos quas blanditiis at earum architecto saepe, magni reprehenderit consequuntur. Sint molestias quas quo porro.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section id="services">
+      <div class="container">
+         <h1>Our Services</h1>
+         <div class="wrapper-services">
+            <div class="profile">
+               <h3>Analyltics</h3>
+               <i class="fas fa-chart-bar fa-8x"> </i>
+            </div>
+            <div class="profile">
+               <h3>Consulting</h3>
+               <i class="fas fa-briefcase fa-8x"> </i>
+            </div>
+            <div class="profile">
+               <h3>Finance</h3>
+               <i class="fas fa-hand-holding-usd fa-8x"> </i>
+            </div>
+            <div class="profile">
+               <h3>Networking</h3>
+               <i class="fas fa-project-diagram fa-8x"> </i>
+            </div>
+            <div class="profile">
+               <h3>Shipping</h3>
+               <i class="fas fa-shipping-fast fa-8x"> </i>
+            </div>
+            <div class="profile">
+               <h3>Research</h3>
+               <i class="fas fa-microscope fa-8x"> </i>
+            </div>
+            <div class="profile">
+               <h3>Innovation</h3>
+               <i class="fas fa-sitemap fa-8x"> </i>
+            </div>
+            <div class="profile">
+               <h3>Planning</h3>
+               <i class="fas fa-clipboard fa-8x"> </i>
+            </div>
+            <div class="profile">
+               <h3>Resources</h3>
+               <i class="fas fa-building fa-8x"> </i>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section id="contact">
+      <div class="container">
+         <h1>Contact Us</h1>
+         <div class="wrapper-services">
+           <div class="profile">
+              <form>
+                 <label for="name">Name</label>
+                 <input type="text" id="name" name="name">
+                 <label for="name">Email</label>
+                 <input type="email" id="email">
+                 <label for="message">Message</label>
+                 <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                 <input type="submit" class="btn2" id="">
+              </form>
+            </div>
+            <div class="profile">
+               <img src="./img/b6a03146b367c8cef76cee608577ef2c.png" alt="">
+            </div>
+         </div>
+      </div>
+   </section>
+   <script
+   src="https://code.jquery.com/jquery-3.6.0.min.js"
+   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+   crossorigin="anonymous"></script>
+   <script>
+   // Smooth Scrolling
+      $('#navbar a, li a, .btn').on('click', function (e) {
+         if (this.hash !== '') {
+            e.preventDefault();
+
+            const hash = this.hash;
+
+            $('html, body').animate(
+               {
+                  scrollTop: $(hash).offset().top - 0,
+               },
+               // Speed
+               800
+            );
+         }
+      });
+      // selctors
+      const images = document.querySelectorAll('.profileImages')
+      console.log(images)
+      // animation scroll event 
+      window.onscroll = function(){
+         if(window.pageYOffset > 400) {
+            for(i = 0; i < images.length; i++) {
+            images[i].style = "animation: image var(--animate-speed) forwards ease-in 1.3s;"
+         }
+         }
+      }
+      </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Flex Basics</title>
+   <style>
+      * {
+         box-sizing: border-box;
+      }
+
+      body {
+         font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .flex-container {
+         /* Flex will talk to all items that are a direct child of the parent element */
+         display: flex;
+         /* Properties are: row, column, row-reverse, coloumn-reverse */
+         flex-direction: row;
+         /* flex-wrap: wrap; */
+      }
+
+      .item {
+         background: #f4f4f4;
+         border: #ccc solid 2px;
+         margin: 10px;
+         padding: 10px;
+         text-align: center;
+         border-radius: 10px;
+         /* width: 200px; */
+         /* flex-shrink: 0; */
+         /* flex-grow: 1; */
+         /* flex: grow shrink basis */
+         flex: 1 0 32.7%;
+         justify-content: space-evenly;
+      }
+
+      /* .item-1 {
+         flex-shrink: 0;
+      }
+      .item-2 {
+         flex-grow: 1;
+         flex-basis: 0;
+      }
+      .item-3 {
+         flex-grow: 2;
+         flex-basis: 0;
+      } */
+   </style>
+</head>
+<body>
+   <div class="flex-container">
+      <div class="item item-1">
+         <h3>Item 1</h3>
+      </div> 
+      <div class="item item-2">
+         <h3>Item 2</h3>
+      </div>
+      <div class="item item-3">
+         <h3>Item 3</h3>
+      </div>
+      <!-- <div class="item item-4">
+         <h3>Item 4</h3>
+      </div>
+      <h1>Hello</h1> -->
+   </div>
+</body>
+</html>

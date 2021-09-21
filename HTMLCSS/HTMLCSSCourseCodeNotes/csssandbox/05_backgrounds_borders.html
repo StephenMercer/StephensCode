@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Background & Borders</title>
+   <style>
+      #box-1 {
+         background-color: blanchedalmond;
+         /* slower way */
+         border-width: 3px;
+         border-color: red;
+         border-style: dotted;
+         /* faster way */
+         border: 3px solid rebeccapurple;
+         border-radius: 20px;
+      }
+
+      #box-2 {
+         background: #333;
+         color: #fff;
+         border-top: solid red 3px;
+         border-top-left-radius: 10px;
+         border-bottom-right-radius: 10px;
+      }
+
+      #box-3 {
+         /* Slower Way */
+         background-image: url(./img/stars.jpg);
+         background-repeat: no-repeat;
+         background-position: 100px 100px;
+         background-position: -100px -100px;
+         background-position: center center;
+         background-size: cover;
+         /* Faster Way */
+         background: url('./img/stars.jpg') no-repeat center center/cover;
+         color: white;
+         height: 300px;
+         width: 600px;
+      }
+
+      #box-4 {
+         background: url(./img/leaf.png) no-repeat center center;
+         background-attachment: fixed;
+      }
+   </style>
+</head>
+<body>
+   <div id="box-1">
+      <h3>Box One</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, culpa. Velit quos cum illum! Illo at corrupti distinctio nisi, doloremque esse in accusamus incidunt. Eius laborum sequi nulla recusandae maiores?</p>
+   </div> 
+   <div id="box-2">
+      <h3>Box Two</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, culpa. Velit quos cum illum! Illo at corrupti distinctio nisi, doloremque esse in accusamus incidunt. Eius laborum sequi nulla recusandae maiores?</p>
+   </div> 
+   <div id="box-3">
+      <h3>Box Three</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, culpa. Velit quos cum illum! Illo at corrupti distinctio nisi, doloremque esse in accusamus incidunt. Eius laborum sequi nulla recusandae maiores?</p>
+   </div> 
+   <div id="box-4">
+      <h3>Box Four</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, culpa. Velit quos cum illum! Illo at corrupti distinctio nisi, doloremque esse in accusamus incidunt. Eius laborum sequi nulla recusandae maiores?</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, culpa. Velit quos cum illum! Illo at corrupti distinctio nisi, doloremque esse in accusamus incidunt. Eius laborum sequi nulla recusandae maiores?</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, culpa. Velit quos cum illum! Illo at corrupti distinctio nisi, doloremque esse in accusamus incidunt. Eius laborum sequi nulla recusandae maiores?</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, culpa. Velit quos cum illum! Illo at corrupti distinctio nisi, doloremque esse in accusamus incidunt. Eius laborum sequi nulla recusandae maiores?</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, culpa. Velit quos cum illum! Illo at corrupti distinctio nisi, doloremque esse in accusamus incidunt. Eius laborum sequi nulla recusandae maiores?</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, culpa. Velit quos cum illum! Illo at corrupti distinctio nisi, doloremque esse in accusamus incidunt. Eius laborum sequi nulla recusandae maiores?</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, culpa. Velit quos cum illum! Illo at corrupti distinctio nisi, doloremque esse in accusamus incidunt. Eius laborum sequi nulla recusandae maiores?</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, culpa. Velit quos cum illum! Illo at corrupti distinctio nisi, doloremque esse in accusamus incidunt. Eius laborum sequi nulla recusandae maiores?</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, culpa. Velit quos cum illum! Illo at corrupti distinctio nisi, doloremque esse in accusamus incidunt. Eius laborum sequi nulla recusandae maiores?</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, culpa. Velit quos cum illum! Illo at corrupti distinctio nisi, doloremque esse in accusamus incidunt. Eius laborum sequi nulla recusandae maiores?</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, culpa. Velit quos cum illum! Illo at corrupti distinctio nisi, doloremque esse in accusamus incidunt. Eius laborum sequi nulla recusandae maiores?</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, culpa. Velit quos cum illum! Illo at corrupti distinctio nisi, doloremque esse in accusamus incidunt. Eius laborum sequi nulla recusandae maiores?</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, culpa. Velit quos cum illum! Illo at corrupti distinctio nisi, doloremque esse in accusamus incidunt. Eius laborum sequi nulla recusandae maiores?</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, culpa. Velit quos cum illum! Illo at corrupti distinctio nisi, doloremque esse in accusamus incidunt. Eius laborum sequi nulla recusandae maiores?</p>
+   </div>   
+</body>
+</html>

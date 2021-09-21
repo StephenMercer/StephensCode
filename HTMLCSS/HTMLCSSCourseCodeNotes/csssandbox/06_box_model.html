@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Box Model / Margin & Padding</title>
+   <style>
+      /* CSS Reset */
+      * {
+         margin: 0;
+         padding: 0;
+         /* Will keep the same width dispite the padding try with padding 120px */
+         box-sizing: border-box;
+      }
+      .box {
+        background: #f4f4f4;
+        border: 2px #777 solid; 
+        width: 500px;
+
+        /* Padding on all sides */
+        /* padding: 120px; */
+        padding: 20px;
+
+        /* Padding per side */
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+
+        /* Padding Shothand = top, right bottom, left basically clockwise*/
+        padding: 10px 20px 30px 40px;
+
+        /* Padding Shorthand = top/bottom, left/right */
+        padding: 10px 20px;
+
+        /* Margin on all sides */
+        margin: 20px;
+
+        /* Margin per side */
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+
+        /* Margin Shothand = top, right bottom, left basically clockwise*/
+        margin: 10px 20px 30px 40px;
+
+        /* Margin Shorthand = top/bottom, left/right */
+        margin: 10px 20px;
+      }
+      .box h3 {
+         padding-bottom: 10px;
+      }
+   </style>
+</head>
+<body>
+   <div class="box">
+      <h3>Box One</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ad fuga tempore. Illo exercitationem unde, dignissimos ducimus sunt accusantium sequi harum consequatur possimus? Placeat, esse distinctio quisquam tenetur dolorum quis?</p>
+   </div>
+   <div class="box">
+      <h3>Box Two</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nostrum harum quam esse eveniet debitis incidunt tempora architecto aliquam, ipsa modi aliquid minus, recusandae numquam veritatis eum dolor consequuntur quasi.</p>
+   </div>
+</body>
+</html>

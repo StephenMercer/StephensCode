@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Float & Align</title>
+   <style>
+      * {
+         box-sizing: border-box;
+      }
+      body {
+         font-family: Arial, Helvetica, sans-serif;
+         line-height: 1.4em;
+      }
+
+      .box {
+         background: #f4f4f4;
+         border: 1px solid #333;
+         padding: 20px;
+         margin-bottom: 15px;
+      }
+      .container {
+         /* Fixed width does not adjust */
+         width: 960px;
+         /* Dynamic width will adjust */
+         max-width: 960px;
+         margin: 30px auto;
+      }
+
+      .clr {
+         clear: both;
+      }
+
+      .box p {
+         /* Text Align */
+         text-align: left;
+         text-align: right;
+         text-align: center;
+         text-align: justify;
+      }
+
+      #box-2 {
+         float: left;
+         width: 68%
+      }
+
+      #box-3 {
+         float: right;
+         width: 30%;
+      }
+
+   </style>
+</head>
+<body>
+   <div class="container">
+      <div id="box-1" class="box">
+         <h3>Heading</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quasi modi eos illo quos cupiditate earum veritatis a iure dolor deserunt qui culpa amet corrupti ea voluptas, maxime ipsa possimus?</p>
+      </div>
+      <div id="box-2" class="box">
+         <h3>Heading</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quasi modi eos illo quos cupiditate earum veritatis a iure dolor deserunt qui culpa amet corrupti ea voluptas, maxime ipsa possimus?</p>
+      </div>
+      <div id="box-3" class="box">
+         <h3>Heading</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quasi modi eos illo quos cupiditate earum veritatis a iure dolor deserunt qui culpa amet corrupti ea voluptas, maxime ipsa possimus?</p>
+      </div>
+
+      <div class="clr"></div>
+
+      <div id="box-4" class="box">
+         <h3>Heading</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quasi modi eos illo quos cupiditate earum veritatis a iure dolor deserunt qui culpa amet corrupti ea voluptas, maxime ipsa possimus?</p>
+      </div>
+   </div>
+</body>
+</html>

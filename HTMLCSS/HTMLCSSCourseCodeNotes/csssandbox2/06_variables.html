@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CSS Variables</title>
+   <style>
+      :root {
+         --max-width: 1100px;
+         /* Tip: If you want to change the theme of your site easily use variables */
+         --primary-color: #333;
+         --secondary-color: #ccc;
+         --light-color: #f4f4f4;
+         
+      }
+
+      .box {
+         --box-1-width: 3;
+         --box-2-width: 1;  
+      }
+      
+      * {
+         margin: 0;
+         padding: 0;
+      }
+
+      body {
+         font-family: Arial, Helvetica, sans-serif;
+         line-height: 1.4;
+         --light-color: #f4f4f4;
+         background: var(--light-color);
+      }
+
+      header {
+         background-color: var(--primary-color);
+         border-bottom: 5px solid var(--secondary-color);
+         color: #ffffff;
+         text-align: center;
+      }
+
+      .container {
+         display: flex;
+         margin: auto;
+         max-width: var(--max-width);
+      }
+
+      .box {
+         background-color: var(--primary-color);
+         border-bottom: 5px var(--secondary-color) solid;
+         color: #ffffff;
+         padding: 1rem;
+         margin: 1rem;
+      }
+
+      .box-1 { flex: var(--box-1-width)}
+      .box-2 { flex: var(--box-2-width)}
+   </style>
+</head>
+<body>
+   <header>
+      <h1>CSS Variables</h1>
+   </header>
+
+   <div class="container">
+      <div class="box box-1">
+         <h3>Heading</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nostrum mollitia numquam eius animi! Mollitia ab consectetur hic debitis atque distinctio pariatur quae aliquid aspernatur saepe. Modi magni sit vitae.</p>
+      </div>
+      <div class="box box-2">
+         <h3>Heading</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nostrum mollitia numquam eius animi! Mollitia ab consectetur hic debitis atque distinctio pariatur quae aliquid aspernatur saepe. Modi magni sit vitae.</p>
+      </div>
+   </div>
+</body>
+</html>
