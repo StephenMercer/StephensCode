@@ -1,0 +1,130 @@
+/* Reset / Initial */
+
+* {
+   padding: 0;
+   margin:0;
+   font-family: 'Average', serif;
+   text-decoration: none;
+   list-style-type: none;
+   color: #777;
+}
+
+/* Text */
+
+.symbols-font {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ts-1 {
+   font-size: 1.2rem;
+   font-weight: bolder;
+}
+
+
+/* Theme */
+.txt-grey {
+   color: #777;
+   background: #ccc;
+}
+
+
+/* Containers */
+
+.container {
+   max-width: 1000px;
+   margin: auto;
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 100%;
+}
+
+
+
+/* Margin */
+
+.mx-1 {
+   margin: 0 5px;
+}
+
+.mx-2 {
+   margin: 0 10px;
+}
+
+.mx-3 {
+   margin: 0 15px;
+}
+
+.mx-4 {
+   margin: 0 20px;
+}
+
+.my-1 {
+   margin: 5px 0;
+}
+
+.my-2 {
+   margin: 10px 0;
+}
+
+.my-3 {
+   margin: 15px 0;
+}
+
+.my-4 {
+   margin: 20px 0;
+}
+
+.mxy-1 {
+   margin: 5px;
+}
+
+.mxy-2 {
+   margin: 10px;
+}
+
+.mxy-3 {
+   margin: 15px;
+}
+
+.mxy-4 {
+   margin: 20px;
+}
+.single-margin {
+   margin-bottom: 102px;
+}
+.single-margin-archive {
+   margin-bottom: 70px
+}
+
+.triple-margin {
+   margin-bottom: 33px;
+}
+
+/* Display */
+
+.reveal {
+   display: none;
+}
+.hide {
+   display: block;
+}
+
+@media(max-width: 768px) {
+   .ts-1 {
+      font-size: 1.2rem;
+   }
+}
+@media(max-width: 500px) {
+   .reveal {
+   display: block;
+}
+   .hide {
+      display: none;
+   }
+}
+
+
